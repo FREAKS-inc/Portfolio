@@ -1,22 +1,15 @@
+/*############################### TAG SELECTORS ###############################*/
 body {
     background-color: #A6D1E6;
     text-align: center;
 }
 
-h1 {
-    color: black;
-    -webkit-text-fill-color: #7F5283;
-    /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #3D3C42;
-}
 
-h2 {
-    color: black;
-    -webkit-text-fill-color: #7F5283;
-    /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #3D3C42;
+img{
+    border-style:groove;
+    border-width: 5px;
+    border-color: #FEFBF6;
+    border-image-outset: 10px;
 }
 
 table {
@@ -35,4 +28,29 @@ hr {
     border-color: #FEFBF6;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+/*############################### CLASS SELECTORS ###############################*/
+
+.header{
+    color: black;
+    -webkit-text-fill-color: #7F5283;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #3D3C42;
+}
+
+.focal-point{
+    background-color: #FEFBF6;
+}
+
+/*############################### ID SELECTORS ###############################*/
+
+#title{
+    font-size: 50px;
+    color: black;
+    -webkit-text-fill-color: #3D3C42;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #7F5283;
 }
