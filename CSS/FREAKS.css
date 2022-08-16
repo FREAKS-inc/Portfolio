@@ -1,0 +1,32 @@
+/*############################### TAG SELECTORS ###############################*/
+html, body {
+    font-family: "Gill Sans", "Gill Sans MT", "Calibri", sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #212121;
+    text-align: center;
+    color: #c6c6c6;
+
+}
+
+
+/*############################### CLASS SELECTORS ###############################*/
+
+.FREAKS-img {
+    position: absolute;
+
+    width: 35%;
+    height: auto;
+
+    top: 200px;
+    left: 400px;
+    right: auto;
+}
+
+/*############################### ID SELECTORS ###############################*/
+
+#main-title{
+    margin-top: 8%;
+}
