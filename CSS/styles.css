@@ -14,10 +14,11 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: #A6D1E6;
     text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
+a { color: inherit; }
 
 h1 {
     font-size: 50px;
@@ -33,6 +34,7 @@ img {
     border-color: #FEFBF6;
     border-image-outset: 10px;
 }
+
 
 table {
     margin-left: auto;
@@ -58,7 +60,17 @@ hr {
     flex-grow: 1;
 }
 
-.header {
+.top-container{
+    background-color: #A6D1E6;
+
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+
+    font-family: 'IBM Plex Serif', serif;
+
     color: black;
     -webkit-text-fill-color: #7F5283;
     /* Will override color (regardless of order) */
@@ -69,13 +81,22 @@ hr {
 .mission {
     border-style: solid;
     /*border-width: 10px 5% 10px 40%;*/
-    background-color: #3D3C42;
+    background-color: #FEFBF6;
     border-radius: 12px;
+    border-width: 1px;
     margin: 20;
     display: inline-block;
     position: relative;
-    left: 10%;
+    
+    font-family: 'DotGothic16', sans-serif;
 }
+
+
+.japanese {
+    font-family: 'DotGothic16', sans-serif;
+    font-size:larger
+}
+
 
 .kanye{
     position: absolute;
@@ -84,7 +105,7 @@ hr {
 }
 
 .footer{
-    min-height: 100%;
+    
     display: grid;
     grid-template-rows: auto 1fr auto;
     position: relative;
@@ -99,7 +120,6 @@ hr {
     font-family:monospace;
     display: inline;
     
-
     position: fixed;
     bottom: 0;
     right: 0;
@@ -107,6 +127,13 @@ hr {
     padding: 0;
 }
 
+.contact a{
+    color: black;
+    -webkit-text-fill-color: #000000;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #3D3C42;
+}
 
 
 /*############################### ID SELECTORS ###############################*/
@@ -118,4 +145,7 @@ hr {
     /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #7F5283;
+
+    margin: 0;
+    padding: 0;
 }

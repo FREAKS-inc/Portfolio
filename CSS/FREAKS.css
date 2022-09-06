@@ -1,32 +1,34 @@
 /*############################### TAG SELECTORS ###############################*/
-html, body {
-    font-family: "Gill Sans", "Gill Sans MT", "Calibri", sans-serif;
-    box-sizing: border-box;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: #212121;
-    text-align: center;
-    color: #c6c6c6;
-
+html,
+body {
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+  text-align: center;
+  color: #c6c6c6;
 }
-
 
 /*############################### CLASS SELECTORS ###############################*/
 
 .FREAKS-img {
-    position: absolute;
+  position: absolute;
 
-    width: 35%;
-    height: auto;
+  width: 350px;
+  height: 92px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-    top: 200px;
-    left: 400px;
-    right: auto;
+
+  margin-top: -47px; /* Half the height */
+  margin-left: -175px; /* Half the width */
 }
 
 /*############################### ID SELECTORS ###############################*/
 
-#main-title{
-    margin-top: 8%;
+#main-title {
+  margin-top: 8%;
 }
