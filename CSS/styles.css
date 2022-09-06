@@ -8,6 +8,8 @@ center-width-defined {
 }
 */
 
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,400&family=IBM+Plex+Serif&family=Qwitcher+Grypen&display=swap');
+
 /*############################### TAG SELECTORS ###############################*/
 html, body {
     box-sizing: border-box;
@@ -45,13 +47,17 @@ td {
     text-align: left
 }
 
+p{
+    margin:0
+}
+
 hr {
     border-style: dotted none none;
     border-width: 8px;
     width: 3%;
     border-color: #3D3C42;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /*############################### CLASS SELECTORS ###############################*/
@@ -60,14 +66,10 @@ hr {
     flex-grow: 1;
 }
 
-.top-container{
-    background-color: #A6D1E6;
-
-    margin: 0;
-    padding: 0;
-}
 
 .heading {
+    margin: 0;
+    padding: 0;
 
     font-family: 'IBM Plex Serif', serif;
 
@@ -139,13 +141,41 @@ hr {
 /*############################### ID SELECTORS ###############################*/
 
 #title {
-    font-size: 50px;
-    color: black;
-    -webkit-text-fill-color: #3D3C42;
-    /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #7F5283;
+    font-size: 7rem;
+    font-family: 'Qwitcher Grypen', cursive;
+
+    color: #474747;
+
 
     margin: 0;
     padding: 0;
 }
+
+#top-container{
+    background-color: #EBC7E8;
+
+    font-family: 'IBM Plex Mono', monospace;
+
+    margin: 0;
+    padding-right: 0;
+
+    padding-bottom: 20px;
+}
+#middle-container {
+    background-color: #BFACE0;
+
+    font-family: 'IBM Plex Mono', monospace;
+
+
+    margin: 0;
+    padding-right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+#william-image{
+    
+}
+

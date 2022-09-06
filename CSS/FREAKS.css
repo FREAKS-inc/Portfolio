@@ -3,7 +3,7 @@ html,
 body {
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", sans-serif;
   box-sizing: border-box;
-  height: 100%;
+  
   padding: 0;
   margin: 0;
   background-color: #212121;
@@ -14,18 +14,14 @@ body {
 /*############################### CLASS SELECTORS ###############################*/
 
 .FREAKS-img {
-  position: absolute;
-
   width: 350px;
   height: 92px;
+
   position: absolute;
-  top: 50%;
-  left: 50%;
-
-
-  margin-top: -47px; /* Half the height */
-  margin-left: -175px; /* Half the width */
-}
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
 
 /*############################### ID SELECTORS ###############################*/
 
