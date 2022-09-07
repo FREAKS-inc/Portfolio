@@ -1,7 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=DotGothic16&family=Forum&family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,400&family=IBM+Plex+Serif&family=Qwitcher+Grypen&family=Zilla+Slab&display=swap');
+
 /*############################### TAG SELECTORS ###############################*/
 html,
 body {
-  font-family: "Gill Sans", "Gill Sans MT", "Calibri", sans-serif;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0.3rem;
   box-sizing: border-box;
   
   user-select: none;
@@ -11,10 +16,15 @@ body {
   background-color: #212121;
   text-align: center;
   color: #c6c6c6;
+  animation-fill-mode: forwards;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,400&family=IBM+Plex+Serif&family=Qwitcher+Grypen&display=swap');
-
+p {
+  opacity: 0;
+  animation: fadeIn 5s 10s;
+  animation-fill-mode: forwards;
+  margin-bottom: 0;
+}
 
 /*############################### CLASS SELECTORS ###############################*/
 
@@ -28,8 +38,87 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     white-space: nowrap;
+
+  opacity: 0;
+  animation: fadeIn 4s 5s;
+  animation-fill-mode: forwards;
 }
+.presents{
+  letter-spacing: 0.15rem;
+  font-family: 'Forum', cursive;
+
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  opacity: 0;
+  text-transform: uppercase;
+  animation: fadeIn 3s 3s;
+  animation-fill-mode: forwards;
+}
+
 /*############################### ID SELECTORS ###############################*/
 
+#coming-soon{
+  z-index: 1;
+  position: fixed;
+  font-size: 3rem;
+  color: rgb(230, 230, 230);
+  opacity: 0;
+  text-align: justify;
+  white-space: break-spaces;
+  animation: whats-coming 1s 2s;
+  animation-fill-mode: forwards;
+
+}
+
 #main-title {
+  font-family: 'Bebas Neue', cursive;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.02rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  opacity: 0;
+  animation: fadeIn 3s 1s;
+  animation-fill-mode: forwards;
+
+}
+
+/*###############################  KEYFRAMES   ###############################*/
+
+@keyframes whats-coming
+{
+  0%{
+    content: attr(contents);
+    opacity: 1;
+    top: 0;
+    left: 0;
+    animation-timing-function: steps(2);
+  }
+
+
+  50%{
+    content: attr(contents);
+    opacity: 1;
+    top: -200%;
+    left: 0;
+  }
+
+  100%{
+    /* content: "COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON"; */
+    opacity: 1;
+    top: -20%;
+    left: -20%;
+    animation-timing-function: steps(1);
+  }
+}
+
+@keyframes fadeIn
+{
+  0%{
+    opacity:0;
+  }
+
+  100%{
+    opacity:1;
+  }
 }
