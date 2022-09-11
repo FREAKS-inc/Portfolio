@@ -8,7 +8,7 @@ center-width-defined {
 }
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=DotGothic16&family=Forum&family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,400&family=IBM+Plex+Serif&family=Qwitcher+Grypen&family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aubrey&family=Bebas+Neue&family=DotGothic16&family=Flamenco:wght@300;400&family=Forum&family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,400&family=IBM+Plex+Serif&family=Qwitcher+Grypen&family=Zilla+Slab&display=swap');
 
 
 /*############################### TAG SELECTORS ###############################*/
@@ -56,8 +56,8 @@ hr {
     border-style: dotted none none;
     border-width: 8px;
     width: 3%;
-    border-color: #3D3C42;
-    margin-top: 0;
+    border-color: #474747;
+    margin-top: 12px;
     margin-bottom: 0;
 }
 
@@ -69,35 +69,68 @@ hr {
 
 
 .heading {
-    margin: 0;
+    margin: 8px 0 2px 0;
     padding: 0;
 
-    font-family: 'IBM Plex Serif', serif;
+    font-size: 2rem;
 
-    color: black;
-    -webkit-text-fill-color: #7F5283;
-    /* Will override color (regardless of order) */
+    font-family: 'Aubrey', cursive;
+    text-transform: lowercase;
+    color: #EBC7E8;
+    /* -webkit-text-fill-color: #7F5283;
+    /* Will override color (regardless of order)
     -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #3D3C42;
+    -webkit-text-stroke-color: #3D3C42; */
 }
 
 .mission {
     border-style: solid;
     /*border-width: 10px 5% 10px 40%;*/
     background-color: #645CAA;
-    border-color: #072227;
+    border-color: #EBC7E8;
     border-radius: 12px;
-    border-width: 3px;
+    border-width: 3px 3px 3px 20px;
+
+    color: #072227;
+
     display: inline-block;
     font-family: 'DotGothic16', sans-serif;
-    font-size: 1rem;
-    margin: 20;
+    font-size: 1.2rem;
+    margin: 0 0 20px 0;
+    padding-right: 20px;
     position: relative;
 
     text-transform: uppercase;
 
     animation: shad-anim 15s linear infinite;
     
+}
+
+.mission hr{
+    border-color: #EBC7E8;
+
+    border-style: solid none none;
+    border-width: 1px;
+    width: 9%;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.sub-list{
+    text-transform: lowercase;
+}
+
+.sub-list li::marker{
+    content: "    ▒";
+    color: #EBC7E8;
+
+    direction: ltr;
+
+    margin-left: 1rem;
+
+    font-size: 1rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 
@@ -204,7 +237,7 @@ hr {
 
     margin: 0;
     padding-right: 0;
-    padding-top: 3%;
+    padding-top: 25px;
     padding-bottom: 3%;
 }
 
