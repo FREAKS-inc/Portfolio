@@ -8,7 +8,8 @@ center-width-defined {
 }
 */
 
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,400&family=IBM+Plex+Serif&family=Qwitcher+Grypen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=DotGothic16&family=Forum&family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,400&family=IBM+Plex+Serif&family=Qwitcher+Grypen&family=Zilla+Slab&display=swap');
+
 
 /*############################### TAG SELECTORS ###############################*/
 html, body {
@@ -203,10 +204,25 @@ hr {
 
     margin: 0;
     padding-right: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
+#bottom-container {
+    background-color: #A084CA;
+
+    font-family: 'IBM Plex Mono', monospace;
+
+
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.brief-history-header{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+}
 
 
 #william-image{
