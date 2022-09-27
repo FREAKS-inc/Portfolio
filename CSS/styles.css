@@ -23,6 +23,30 @@ html, body {
 
 a { color: inherit; }
 
+body {
+    overflow: overlay;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+    scroll-padding-right: 9px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #FFE6F7;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 2px solid #BFACE0;  /* creates padding around scroll thumb */
+  }
+
+
+figure{
+    margin: 16px;
+}
+
 h1 {
     font-size: 50px;
 }
@@ -57,6 +81,7 @@ hr {
     border-width: 8px;
     width: 3%;
     border-color: #474747;
+    margin: auto;
     margin-top: 12px;
     margin-bottom: 0;
 }
@@ -71,7 +96,7 @@ hr {
 .heading {
     margin: 8px 0 2px 0;
     padding: 0;
-
+    font-weight: 600;
     font-size: 2rem;
 
     font-family: 'Aubrey', cursive;
@@ -100,6 +125,7 @@ hr {
     display: inline-block;
     font-family: 'DotGothic16', sans-serif;
     font-size: 1rem;
+
     line-height: 2rem;
     margin: 0 0 20px 0;
     padding: 10px 20px 0 0;
@@ -111,6 +137,36 @@ hr {
     animation: shad-anim 15s linear infinite;
     
 }
+
+.mission a{
+    text-decoration: none;  
+    display: inline-block;
+    position: relative;
+    color: #EBC7E8;}
+
+.mission a:hover{
+    color:aliceblue;
+    text-decoration: none;
+
+}
+
+.mission a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: aliceblue;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .mission a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 .mission hr{
     border-color: #EBC7E8;
@@ -124,6 +180,18 @@ hr {
 
 .mission td{
     padding: 10px 40px 15px 20px;
+}
+
+.mission th{
+    font-family: 'Aubrey', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+    padding-left: 45px;
+}
+
+.mission .th-right{
+    padding-left: 80px;
 }
 
 .significant-events{
@@ -179,17 +247,45 @@ hr {
     position: fixed;
     bottom: 0;
     right: 0;
+
     margin-bottom: 2px;
-    padding: 0;
+    padding: 0 10px;
+
+    z-index: 1;
 }
 
 .contact a{
     color: black;
-    -webkit-text-fill-color: #000000;
-    /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #3D3C42;
+
+    text-decoration: none;  
+    display: inline-block;
+    position: relative;
+
 }
+
+.contact a:hover{
+    color:aliceblue;
+    text-decoration: none;
+
+}
+
+.contact a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: aliceblue;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .contact a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 
 /*############################### ID SELECTORS ###############################*/
@@ -197,17 +293,23 @@ hr {
 #title {
     font-size: 7rem;
     font-family: 'Qwitcher Grypen', cursive;
-
+    font-weight: 600;
     color: #474747;
 
 
     margin: 0;
     padding: 0;
+
+    white-space: nowrap;
+
 }
 #title::after {
     content: attr(data-shadow);
+
     position: absolute;
     transform: translate(-98%,+2%);
+
+    white-space: nowrap;
 
     z-index: -0;
     text-shadow: none;
