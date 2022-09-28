@@ -25,10 +25,11 @@ a { color: inherit; }
 
 body {
     overflow: overlay;
+    min-width: 100vh
 }
 
 body::-webkit-scrollbar {
-    width: 8px;               /* width of the entire scrollbar */
+    width: 12px;               /* width of the entire scrollbar */
     scroll-padding-right: 9px;
   }
   
@@ -62,6 +63,38 @@ img {
     border-image-outset: 10px;
 }
 
+input {
+    border-style: solid;
+    /*border-width: 10px 5% 10px 40%;*/
+    background-color: #645CAA;
+    border-color: #EBC7E8;
+    border-radius: 12px;
+    border-width: 3px 3px 3px 8px;
+
+    color: #EBC7E8;
+    
+    transform-origin: bottom right;
+    transition: color 0.25s ease-out;
+    transition: border-color 0.25s ease-out;
+    transition: border-width 0.25s ease-out;
+}
+
+input[type=text] {
+    background-color: #645CAA;
+    text-indent: 0.5em;
+}
+
+ input[type=submit]:hover {
+    border-style: solid;
+    /*border-width: 10px 5% 10px 40%;*/
+    background-color: #645CAA;
+    border-color: aliceblue;
+    border-radius: 12px;
+    border-width: 3px 3px 3px 12px;
+
+    color: aliceblue;
+ }
+
 
 table {
     margin-left: auto;
@@ -70,6 +103,17 @@ table {
 
 td {
     text-align: left
+}
+
+textarea{
+    background-color: #EBC7E8;
+    color: #A084CA;
+
+    padding: 10px;
+
+    text-align: center;
+
+    font-weight: bolder;
 }
 
 p{
@@ -112,7 +156,7 @@ hr {
     text-transform: lowercase;
 }
 
-.mission {
+.focus-a {
     border-style: solid;
     /*border-width: 10px 5% 10px 40%;*/
     background-color: #645CAA;
@@ -128,6 +172,9 @@ hr {
 
     line-height: 2rem;
     margin: 0 0 20px 0;
+
+    min-width: 400px;
+
     padding: 10px 20px 0 0;
     position: relative;
 
@@ -138,19 +185,48 @@ hr {
     
 }
 
-.mission a{
+.focus-b {
+    border-style: solid;
+    /*border-width: 10px 5% 10px 40%;*/
+    background-color: #645CAA;
+    border-color: #A084CA;
+    border-radius: 12px;
+    border-width: 3px 3px 3px 20px;
+
+    color: #EBC7E8;
+
+    display: inline-block;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 1rem;
+
+    line-height: 2rem;
+    margin: 0 0 20px 0;
+
+    min-width: 600px;
+
+    padding: 10px 20px 0 0;
+    position: relative;
+
+    text-transform: uppercase;
+    
+
+    animation: shad-anim 15s linear infinite;
+    
+}
+
+.focus-a, .focus-b a{
     text-decoration: none;  
     display: inline-block;
     position: relative;
     color: #EBC7E8;}
 
-.mission a:hover{
+.focus-a, .focus-b a:hover{
     color:aliceblue;
     text-decoration: none;
 
 }
 
-.mission a:after {
+.focus-a, .focus-b a:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -163,12 +239,12 @@ hr {
     transition: transform 0.25s ease-out;
   }
   
-  .mission a:hover:after {
+  .focus-a, .focus-b a:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
 
-.mission hr{
+.focus-a, .focus-b hr{
     border-color: #EBC7E8;
 
     border-style: solid none none;
@@ -178,11 +254,11 @@ hr {
     margin-bottom: 10px;
 }
 
-.mission td{
+.focus-a, .focus-b td{
     padding: 10px 40px 15px 20px;
 }
 
-.mission th{
+.focus-a, .focus-b th{
     font-family: 'Aubrey', cursive;
     font-size: 1.5rem;
     letter-spacing: 0.5rem;
@@ -190,7 +266,7 @@ hr {
     padding-left: 45px;
 }
 
-.mission .th-right{
+.focus-a, .focus-b .th-right{
     padding-left: 80px;
 }
 
