@@ -12,6 +12,11 @@ center-width-defined {
 
 
 /*############################### TAG SELECTORS ###############################*/
+
+*:focus {
+    outline: none;
+  }
+
 html, body {
     box-sizing: border-box;
     height: 100%;
@@ -29,7 +34,8 @@ body {
 }
 
 body::-webkit-scrollbar, textarea::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
+    width: 10px;              /* width of the entire scrollbar */
+    height: 10px;
     scroll-padding-right: 9px;
   }
   
@@ -44,6 +50,10 @@ body::-webkit-scrollbar, textarea::-webkit-scrollbar {
   }
 
   ::-webkit-resizer {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-corner{
     display: none;
   }
 
@@ -76,11 +86,18 @@ input {
     border-width: 3px 3px 3px 8px;
 
     color: #EBC7E8;
+    font-family: 'IBM Plex Mono', monospace;    font-size: normal;
+    font-size: 0.9rem;
+    height: 30px;
+    line-height:normal;
+    margin:5px 0;
     
+
     transform-origin: bottom right;
     transition: color 0.25s ease-out;
     transition: border-color 0.25s ease-out;
     transition: border-width 0.25s ease-out;
+    vertical-align: middle;
 }
 
 input[type=text], input[type=email ] {
@@ -90,8 +107,10 @@ input[type=text], input[type=email ] {
 
 textarea{
     border-radius: 8px;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     padding: 20px;
+    letter-spacing: 1px;
+    width:70%;
 }
 
 
@@ -106,6 +125,12 @@ textarea{
     color: aliceblue;
  }
 
+ input:-webkit-autofill,
+ input:-webkit-autofill:hover, 
+ input:-webkit-autofill:focus, 
+ input:-webkit-autofill:active{
+    background-color: #EBC7E8;
+ }
 
 table {
     margin-left: auto;
@@ -216,7 +241,7 @@ hr {
     line-height: 2rem;
     margin: 0 0 20px 0;
 
-    min-width: 600px;
+    min-width: 35%;
 
     padding: 10px 20px 0 0;
     position: relative;
@@ -391,6 +416,7 @@ hr {
     padding: 0;
 
     white-space: nowrap;
+    z-index: 1;
 
 }
 #title::after {
@@ -401,7 +427,7 @@ hr {
 
     white-space: nowrap;
 
-    z-index: -0;
+    z-index: 0;
     text-shadow: none;
     background-image:
       linear-gradient(
@@ -448,6 +474,8 @@ hr {
     padding-right: 0;
     padding-top: 40px;
     padding-bottom: 3%;
+    z-index: -1;
+
 }
 
 #bottom-container {
@@ -459,6 +487,8 @@ hr {
     margin: 0;
     padding-top: 100px;
     padding-bottom: 100px;
+    z-index: -2;
+
 }
 
 .brief-history-header{

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "TI84";
+    src: url(../Fonts/04b03.woff2) format(woff2);
+}
+
+body{
+    background-color: #7BA693;
+    color: #14272F;
+    font-family: "TI84";
+}
+
+/* CSS for the cursor blinking effect */
+.typing-cursor {
+    display: inline-block;
+    vertical-align: bottom;
+    animation: blink .7s infinite;
+  }
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
