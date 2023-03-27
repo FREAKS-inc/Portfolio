@@ -10,7 +10,19 @@ function typeAnimation(container){
     // for each character in the div
     for (let i = 0; i < text.length; i++) {
     setTimeout(() => {
-        container.innerHTML += text.charAt(i);
+        if (text.charAt(i) == "." || text.charAt(i) == ","){
+            container.innerHTML += text.charAt(i);
+            // you.com weirdo but functional solution to pausing code synchronously
+            // const delayInMilliseconds = 1000; // 5 seconds
+            // const now = Date.now();
+            // let end = now + delayInMilliseconds;
+            // while (Date.now() < end) {
+            // // pause execution
+            // }
+        } else {
+            container.innerHTML += text.charAt(i);
+        }
+
         if (i === text.length - 1) {
             container.innerHTML += '<span class="typing-cursor">&#9474;</span>'; // add a blinking cursor after the text
         }

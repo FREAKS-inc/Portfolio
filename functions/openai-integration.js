@@ -2,7 +2,7 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const openai = require('openai');
 
-admin.initializeApp();
+// admin.initializeApp();
 
 exports.updateText = functions.https.onCall(async (data, context) => {
   const prompt = data.prompt;
